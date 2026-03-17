@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="ru">
+  @include('partials/head.html')
+  <body class="page__body">
+    <div class="wrapper site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide hero__swiper-slide flex">
+                  <picture>
+                    <source
+                      srcset="img/hero/bg-hero.webp"
+                      type="image/webp"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-1_576.webp"
+                      type="image/webp"
+                      media="(min-width:320px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero.jpg"
+                      type="image/jpeg"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-1_576.jpg"
+                      type="image/jpeg"
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="img/hero/bg-hero.jpg"
+                      class="hero__swiper-img"
+                      fetchpriority="high"
+                      alt="Фото"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide hero__swiper-slide flex">
+                  <picture>
+                    <source
+                      srcset="img/hero/bg-hero-2.webp"
+                      type="image/webp"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-2_576.webp"
+                      type="image/webp"
+                      media="(min-width:320px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-2.jpg"
+                      type="image/jpeg"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-2_576.jpg"
+                      type="image/jpeg"
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="img/hero/bg-hero-2.jpg"
+                      class="hero__swiper-img"
+                      alt="Фото"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide hero__swiper-slide flex">
+                  <picture>
+                    <source
+                      srcset="img/hero/bg-hero-3.webp"
+                      type="image/webp"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-3_576.webp"
+                      type="image/webp"
+                      media="(min-width:320px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-3.jpg"
+                      type="image/jpeg"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-3_576.jpg"
+                      type="image/jpeg"
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="img/hero/bg-hero-3.jpg"
+                      class="hero__swiper-img"
+                      alt="Фото"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide hero__swiper-slide flex">
+                  <picture>
+                    <source
+                      srcset="img/hero/bg-hero-5.webp"
+                      type="image/webp"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-4_576.webp"
+                      type="image/webp"
+                      media="(min-width:320px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-5.jpg"
+                      type="image/jpeg"
+                      media="(min-width:767px)"
+                    />
+                    <source
+                      srcset="img/hero/bg-hero-4_576.jpg"
+                      type="image/jpeg"
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="img/hero/bg-hero-5.jpg"
+                      class="hero__swiper-img"
+                      alt="Фото"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="hero__pagination swiper-pagination"></div>
+            </div>
+            <div class="hero__content">
+              <div class="hero__logo">
+                <img
+                  class="hero__logo-img"
+                  src="../img/svg/logo-hero.svg"
+                  alt="Лого"
+                />
+              </div>
+              <div class="hero__text">Когда радость важнее всего</div>
+            </div>
+          </div>
+        </section>
+        <section class="feel">
+          <div class="feel__video">
+            <video
+              preload="none"
+              autoplay
+              muted
+              class="feel__video-center"
+              poster="img/main/bg-1.jpg"
+            >
+              <source src="video/video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="feel__container container">
+            <div class="feel__wrap flex">
+              <div class="feel__left">Порадуйте близких вместе с нами</div>
+              <div class="feel__right">
+                <div class="feel__right-content">
+                  Всё увиденное вами далее - не просто кондитерские изделия
+                  (еда, сладости) - это радость для вас, ваших друзей и близких,
+                  когда вы смотрите на них, пробуете их, дарите и когда вас за
+                  них благодарят...
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feel-more section-offset">
+          <div class="feel-more-container container">
+            <div class="feel-more__top">
+              <div class="feel-more__left">
+                <h2 class="feel-more__title section-title">
+                  Почувствуйте радость как можно скорее
+                </h2>
+                <a
+                  href="https://disk.yandex.ru/d/ckMR5ckXZwcfzw"
+                  class="feel-more__subtitle feel-more__link"
+                  >Сезонный каталог</a
+                >
+                <div class="feel-more__subtitle">Хиты продаж</div>
+              </div>
+              <div class="feel-more__right">
+                <div class="swiper feel-more__swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <a
+                      href="pryanik.html#hit-1"
+                      class="feel-more__swiper-slide swiper-slide"
+                    >
+                      <picture>
+                        <!-- Мобильные версии (до 767px) -->
+                        <source
+                          srcset="img/main/01_sm.webp"
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="img/main/01_sm.png"
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+
+                        <!-- Десктопные версии (от 768px) -->
+                        <source
+                          srcset="img/main/01.webp"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="img/main/01.png"
+                          type="image/png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/main/01.png"
+                          class="feel-more__swiper-img"
+                          width="500"
+                          height="450"
+                          alt="Фото"
+                        />
+                      </picture>
+
+                      <div class="feel-more__swiper-title">
+                        “Дамский каприз”
+                      </div>
+                      <div class="feel-more__swiper-subtitle">
+                        Нежный, изысканный и вкусный зефирный букет
+                      </div>
+                    </a>
+                    <a
+                      href="pryanik.html#hit-2"
+                      class="feel-more__swiper-slide swiper-slide"
+                    >
+                      <picture>
+                        <!-- Мобильные версии (до 767px) -->
+                        <source
+                          srcset="img/main/02_sm.webp"
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="img/main/02_sm.png"
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+
+                        <!-- Десктопные версии (от 768px) -->
+                        <source
+                          srcset="img/main/02.webp"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="img/main/02.png"
+                          type="image/png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/main/02.png"
+                          class="feel-more__swiper-img"
+                          width="500"
+                          height="450"
+                          alt="Фото"
+                        />
+                      </picture>
+
+                      <div class="feel-more__swiper-title">“Семья”</div>
+                      <div class="feel-more__swiper-subtitle">
+                        Мягкое напоминание о самом главном
+                      </div>
+                    </a>
+                    <a
+                      href="zefir.html#hit-3"
+                      class="feel-more__swiper-slide swiper-slide"
+                    >
+                      <picture>
+                        <!-- Мобильные версии (до 767px) -->
+                        <source
+                          srcset="img/main/03_sm.webp"
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="img/main/03_sm.png"
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+
+                        <!-- Десктопные версии (от 768px) -->
+                        <source
+                          srcset="img/main/03.webp"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="img/main/03.png"
+                          type="image/png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/main/03.png"
+                          class="feel-more__swiper-img"
+                          width="500"
+                          height="450"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="feel-more__swiper-title">VIP</div>
+                      <div class="feel-more__swiper-subtitle">
+                        Зефирный букет : гортензии и тюльпаны
+                      </div>
+                    </a>
+                    <a
+                      href="torts.html#hit-4"
+                      class="feel-more__swiper-slide swiper-slide"
+                    >
+                      <picture>
+                        <!-- Мобильные версии (до 767px) -->
+                        <source
+                          srcset="img/main/04_sm.webp"
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="img/main/04_sm.png"
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+
+                        <!-- Десктопные версии (от 768px) -->
+                        <source
+                          srcset="img/main/04.webp"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="img/main/04.png"
+                          type="image/png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/main/04.png"
+                          class="feel-more__swiper-img"
+                          width="500"
+                          height="450"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="feel-more__swiper-title">“Книга жизни”</div>
+                      <div class="feel-more__swiper-subtitle">
+                        Оригинальный дизайн и незабываемый вкус!
+                      </div>
+                    </a>
+                    <a
+                      href="pryanik.html#sec-5"
+                      class="feel-more__swiper-slide swiper-slide"
+                    >
+                      <picture>
+                        <!-- Мобильные версии (до 767px) -->
+                        <source
+                          srcset="img/main/08_sm.webp"
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="img/main/08_sm.png"
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+
+                        <!-- Десктопные версии (от 768px) -->
+                        <source
+                          srcset="img/main/08.webp"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="img/main/08.png"
+                          type="image/png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/main/08.png"
+                          class="feel-more__swiper-img"
+                          width="500"
+                          height="450"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="feel-more__swiper-title">“Щелкунчик”</div>
+                      <div class="feel-more__swiper-subtitle">
+                        Набор ароматных, душистых пряников
+                      </div>
+                    </a>
+                    <a
+                      href="torts.html#hit-6"
+                      class="feel-more__swiper-slide swiper-slide"
+                    >
+                      <picture>
+                        <!-- Мобильные версии (до 767px) -->
+                        <source
+                          srcset="img/main/06_sm.webp"
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="img/main/06_sm.png"
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+
+                        <!-- Десктопные версии (от 768px) -->
+                        <source
+                          srcset="img/main/06.webp"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="img/main/06.png"
+                          type="image/png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/main/06.png"
+                          class="feel-more__swiper-img"
+                          width="500"
+                          height="450"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="feel-more__swiper-title">
+                        “Бомбическая радость”
+                      </div>
+                      <div class="feel-more__swiper-subtitle">
+                        Необычная подача и нежная начинка
+                      </div>
+                    </a>
+                    <a
+                      href="pryanik.html#hit-7"
+                      class="feel-more__swiper-slide swiper-slide"
+                    >
+                      <picture>
+                        <!-- Мобильные версии (до 767px) -->
+                        <source
+                          srcset="img/main/07_sm.webp"
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="img/main/07_sm.png"
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+
+                        <!-- Десктопные версии (от 768px) -->
+                        <source
+                          srcset="img/main/07.webp"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="img/main/07.png"
+                          type="image/png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/main/07.png"
+                          class="feel-more__swiper-img"
+                          width="500"
+                          height="450"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="feel-more__swiper-title">Домик “Зима”</div>
+                      <div class="feel-more__swiper-subtitle">
+                        Можно только любоваться!
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feel-more__bottom">
+              Мастер нашего заведения точно знает свое дело и старательно
+              трудится над каждым изделием. Работа настолько профессиональна,
+              что каждое творение становится настоящим произведением искусства.
+              Прянично-зефирное заведение “Радость” - это настоящий рай для
+              любителей сладкого! Каждое изделие создается с особым вниманием и
+              любовью, будто специально для того, чтобы порадовать Вас, и совсем
+              не важно большой ли это торт или маленький пряник.
+            </div>
+          </div>
+        </section>
+        <section class="feel-tips">
+          <div class="feel-tips__container">
+            <div class="feel-tips__item feel-tips__item-1">
+              <!-- <button class="feel-tips__btn" aria-labelledby="tooltip-1"></button> -->
+              <button class="feel-tips__btn"></button>
+              <div class="feel-tips__card card-tips">
+                <div class="card-tips__img">
+                  <picture>
+                    <source srcset="img/pryanik/07.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="img/pryanik/07.jpg"
+                      width="576"
+                      height="559"
+                      alt="Фото"
+                    />
+                  </picture>
+                </div>
+                <div class="card-tips__content">
+                  <div class="card-tips__title">Семья</div>
+                  <div class="card-tips__subtitle">
+                    Пряничная медвежья семья
+                  </div>
+                  <a href="pryanik.html#sec-1" class="card-tips__link"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="feel-tips__item feel-tips__item-2">
+              <button class="feel-tips__btn"></button>
+              <div class="feel-tips__card card-tips">
+                <div class="card-tips__img">
+                  <picture>
+                    <source srcset="img/zefir/08.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="img/zefir/08.jpg"
+                      width="576"
+                      height="559"
+                      alt="Фото"
+                    />
+                  </picture>
+                </div>
+                <div class="card-tips__content">
+                  <div class="card-tips__title">Тюльпаны</div>
+                  <div class="card-tips__subtitle">
+                    Зефирный букет тюльпанов
+                  </div>
+                  <a href="zefir.html#tip-1" class="card-tips__link"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="feel-tips__item feel-tips__item-3">
+              <button class="feel-tips__btn"></button>
+              <div class="feel-tips__card card-tips">
+                <div class="card-tips__img">
+                  <picture>
+                    <source srcset="img/chocolade/01.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="img/chocolade/01.jpg"
+                      width="576"
+                      height="559"
+                      alt="Фото"
+                    />
+                  </picture>
+                </div>
+                <div class="card-tips__content">
+                  <div class="card-tips__title">Зайка с сердечком</div>
+                  <div class="card-tips__subtitle">
+                    Фигурка из бельгийского шоколада
+                  </div>
+                  <a href="chocolade.html#tip-3" class="card-tips__link"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="feel-tips__more">
+              <div class="feel-tips-more__subtitle">
+                У нас найдётся десерт для любого вашего радостного события: день
+                рождения, Восьмое марта, День защитника Отечества, Новый год,
+                Рождество, свадьба, бизнес-презент, Пасха, дружеские посиделки,
+                романтический подарок, День учителя или просто так, без
+                повода...
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="best section-offset">
+          <div class="best__container container">
+            <h2 class="best__title section-title">Все самое вкусное для вас</h2>
+            <div class="best__content">
+              <a
+                href="pryanik.html"
+                class="best__content-card best__content-card-1"
+              >
+                <picture>
+                  <!-- Мобильные версии (до 767px) -->
+                  <source
+                    srcset="img/best/01_sm.webp"
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="img/best/01_sm.png"
+                    type="image/png"
+                    media="(max-width: 767px)"
+                  />
+
+                  <!-- Десктопные версии (от 768px) -->
+                  <source
+                    srcset="img/best/01.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="img/best/01.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/best/01.png"
+                    width="850"
+                    height="852"
+                    alt="Фото"
+                  />
+                </picture>
+              </a>
+              <a
+                href="zefir.html"
+                class="best__content-card best__content-card-2"
+              >
+                <picture>
+                  <!-- Мобильные версии (до 767px) -->
+                  <source
+                    srcset="img/best/02_sm.webp"
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="img/best/02_sm.png"
+                    type="image/png"
+                    media="(max-width: 767px)"
+                  />
+
+                  <!-- Десктопные версии (от 768px) -->
+                  <source
+                    srcset="img/best/02.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="img/best/02.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/best/02.png"
+                    width="850"
+                    height="852"
+                    alt="Фото"
+                  />
+                </picture>
+              </a>
+              <a
+                href="torts.html"
+                class="best__content-card best__content-card-3"
+              >
+                <picture>
+                  <!-- Мобильные версии (до 767px) -->
+                  <source
+                    srcset="img/best/03_sm.webp"
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="img/best/03_sm.png"
+                    type="image/png"
+                    media="(max-width: 767px)"
+                  />
+
+                  <!-- Десктопные версии (от 768px) -->
+                  <source
+                    srcset="img/best/03.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="img/best/03.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/best/03.png"
+                    width="850"
+                    height="852"
+                    alt="Фото"
+                  />
+                </picture>
+              </a>
+              <a
+                href="chocolade.html"
+                class="best__content-card best__content-card-4"
+              >
+                <picture>
+                  <!-- Мобильные версии (до 767px) -->
+                  <source
+                    srcset="img/best/04_sm.webp"
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="img/best/04_sm.png"
+                    type="image/png"
+                    media="(max-width: 767px)"
+                  />
+
+                  <!-- Десктопные версии (от 768px) -->
+                  <source
+                    srcset="img/best/04.webp"
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="img/best/04.png"
+                    type="image/png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/best/04.png"
+                    width="850"
+                    height="852"
+                    alt="Фото"
+                  />
+                </picture>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="payment section-offset">
+          <div class="payment__container container">
+            <h2 class="payment__container-title section-title">
+              Оплата и доставка
+            </h2>
+            <ul class="payment__content payment-cards list-reset">
+              <li class="payment-cards__card payment-cards__card-1">
+                <div class="payment-cards__title">Оплата</div>
+                <div class="payment-cards__subtitle">
+                  Оплата любым удобным для Вас способом: наличными или СБП
+                </div>
+              </li>
+              <li class="payment-cards__card payment-cards__card-2">
+                <div class="payment-cards__title">Доставка</div>
+                <div class="payment-cards__subtitle">
+                  Самовывоз или курьерская доставка. Бесплатно при заказе
+                  от 10000 руб.
+                </div>
+              </li>
+              <li class="payment-cards__card payment-cards__card-3">
+                <div class="payment-cards__title">Качество</div>
+                <div class="payment-cards__subtitle">
+                  Только качественные и натуральные ингредиенты
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="questions section-offset">
+          <div class="questions__container container">
+            <h2 class="questions__title section-title">
+              Часто задаваемые вопросы
+            </h2>
+            <div class="questions__content">
+              <ul class="questions__accordion accordion list list-reset">
+                <li class="accordion__item ac" tabindex="0">
+                  <h3 class="ac-header">
+                    <button
+                      class="ac-trigger flex"
+                      aria-label="Выпадающий список"
+                    >
+                      <span class="ac-trigger__title"
+                        >Делаете ли Вы ПП-десерты?</span
+                      >
+
+                      <span class="ac-trigger__button">
+                        <svg
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div class="ac-panel">
+                    <p class="accordion__text">
+                      Мы специализируемся на традиционных десертах, поэтому Вам
+                      лучше обратиться к кондитеру, занимающемуся ПП-десертами.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item ac" tabindex="0">
+                  <h3 class="ac-header">
+                    <button
+                      class="ac-trigger flex"
+                      aria-label="Выпадающий список"
+                    >
+                      <span class="ac-trigger__title"
+                        >За какое время необходимо сделать заказ?</span
+                      >
+
+                      <span class="ac-trigger__button">
+                        <svg
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div class="ac-panel">
+                    <p class="accordion__text">
+                      Оформляйте заказ, как только определились с выбором, но не
+                      менее, чем за три дня.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item ac" tabindex="0">
+                  <h3 class="ac-header">
+                    <button
+                      class="ac-trigger flex"
+                      aria-label="Выпадающий список"
+                    >
+                      <span class="ac-trigger__title"
+                        >Можно ли ваши изделия заказать в другой город?</span
+                      >
+
+                      <span class="ac-trigger__button">
+                        <svg
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div class="ac-panel">
+                    <p class="accordion__text">
+                      Да, если это зефир или пряники.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item ac" tabindex="0">
+                  <h3 class="ac-header">
+                    <button
+                      class="ac-trigger flex"
+                      aria-label="Выпадающий список"
+                    >
+                      <span class="ac-trigger__title"
+                        >Можно сделать зефир без сахара?</span
+                      >
+
+                      <span class="ac-trigger__button">
+                        <svg
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div class="ac-panel">
+                    <p class="accordion__text">
+                      Дело в том, что сахар выступает в роли связывающего
+                      вещества при взбивании белка. Сахарозаменители при
+                      приготовлении зефира возможны, но в своём рецепте мы
+                      используем сахар.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item ac" tabindex="0">
+                  <h3 class="ac-header">
+                    <button
+                      class="ac-trigger flex"
+                      aria-label="Выпадающий список"
+                    >
+                      <span class="ac-trigger__title"
+                        >Вы используете красители?</span
+                      >
+
+                      <span class="ac-trigger__button">
+                        <svg
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div class="ac-panel">
+                    <p class="accordion__text">
+                      Для придания цвета некоторым изделиям мы применяем
+                      сертифицированные пищевые красители высокого качества.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item ac" tabindex="0">
+                  <h3 class="ac-header">
+                    <button
+                      class="ac-trigger flex"
+                      aria-label="Выпадающий список"
+                    >
+                      <span class="ac-trigger__title"
+                        >Ваши красители окрашивают губы и язык?</span
+                      >
+
+                      <span class="ac-trigger__button">
+                        <svg
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div class="ac-panel">
+                    <p class="accordion__text">
+                      В редких случаях при интенсивном цвете изделия такое
+                      возможно. Это нормально, так как даже натуральный
+                      краситель оставляет следы.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion__item ac" tabindex="0">
+                  <h3 class="ac-header">
+                    <button
+                      class="ac-trigger flex"
+                      aria-label="Выпадающий список"
+                    >
+                      <span class="ac-trigger__title"
+                        >Мой пряник показался мне жёстким. Что можно
+                        сделать?</span
+                      >
+
+                      <span class="ac-trigger__button">
+                        <svg
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div class="ac-panel">
+                    <p class="accordion__text">
+                      Изделия из пряничного теста и сахарной глазури довольно
+                      быстро теряют влагу при контакте с воздухом. Чтобы вернуть
+                      прянику былую мягкость, положите его в контейнер с
+                      крышкой, добавив туда кусочек яблока. Через 6-8 часов он
+                      вернёт свою первоначальную мягкость.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="world section-offset">
+          <div class="world__container container">
+            <div class="world__content">
+              <div class="world__content-left">
+                <h2 class="world__content-title section-title">
+                  Окунитесь в наш радостный мир
+                </h2>
+                <div class="world__content-subtitle">
+                  Наши непридуманные истории
+                </div>
+              </div>
+              <div class="world__content-right">
+                <div class="swiper world__swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div
+                      class="world__swiper-item world__swiper-item-1 swiper-slide"
+                    >
+                      <picture>
+                        <source srcset="img/world/01.webp" type="image/webp" />
+                        <img
+                          loading="lazy"
+                          src="img/world/01.png"
+                          width="550"
+                          height="550"
+                          class="world__swiper-item-img"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="world__swiper-title">
+                        История про Щелкунчика
+                      </div>
+                      <a
+                        href="#popup-story-1"
+                        class="world__swiper-link popup-link"
+                        >Подробнее</a
+                      >
+                    </div>
+                    <div
+                      class="world__swiper-item world__swiper-item-2 swiper-slide"
+                    >
+                      <picture>
+                        <source srcset="img/world/02.webp" type="image/webp" />
+                        <img
+                          loading="lazy"
+                          src="img/world/02.png"
+                          width="550"
+                          height="550"
+                          class="world__swiper-item-img"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="world__swiper-title">Радость дарить</div>
+                      <a
+                        href="#popup-story-2"
+                        class="world__swiper-link popup-link"
+                        >Подробнее</a
+                      >
+                    </div>
+                    <div
+                      class="world__swiper-item world__swiper-item-3 swiper-slide"
+                    >
+                      <picture>
+                        <source srcset="img/world/03.webp" type="image/webp" />
+                        <img
+                          loading="lazy"
+                          src="img/world/03.png"
+                          width="550"
+                          height="550"
+                          class="world__swiper-item-img"
+                          alt="Фото"
+                        />
+                      </picture>
+                      <div class="world__swiper-title">
+                        Радость с продолжением
+                      </div>
+                      <a
+                        href="#popup-story-3"
+                        class="world__swiper-link popup-link"
+                        >Подробнее</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+      <div
+        id="popup-story-1"
+        class="sign-up__popup popup-story popup-story__popup-1"
+      >
+        <div class="sign-up__body">
+          <div
+            class="popup-story__container popup-story__container-1 sign-up__container"
+          >
+            <div class="sign-up__close-btn close-popup"></div>
+            <div class="popup-story__content">
+              <div class="popup-story__title section-title">
+                История про Щелкунчика
+              </div>
+              <div class="popup-story__text">
+                <p class="popup-story__text-item">
+                  Эта история произошла в канун Нового года. Мы решили подарить
+                  пряничный набор «Щелкунчик» нашему чудесному
+                  учителю-репетитору английского языка. Набор не оставил
+                  педагога равнодушным. В скором времени фотография пряников
+                  появилась на страничке учителя с множеством тёплых и радостных
+                  отзывов. Через некоторое время у одной нашей знакомой в
+                  социальных сетях появились фотографии елки, украшенной этими
+                  же пряниками. Мы были удивлены, так как вероятность того, что
+                  кто-то сделал точно такие же пряники, ничтожна.
+                </p>
+                <p class="popup-story__text-item">
+                  Как оказалось, наша учительница решила утешить свою ученицу.
+                  Она тоже занималась английским языком. В тот год девочка
+                  сильно и много болела. «Дополнительная» радость была очень
+                  нужна ей и ее семье. История про этот «двойной» подарок и
+                  радость «в квадрате» еще не раз вспоминалась нам. Кстати, те
+                  пряники были аккуратно убраны до следующего Нового года.
+                </p>
+                <p class="popup-story__text-item">
+                  В этом году мы решили подарить указанной семье ещё несколько
+                  пряников из коллекции «Щелкунчик», тем самым продолжив
+                  радость.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="popup-story-2"
+        class="sign-up__popup popup-story popup-story__popup-1"
+      >
+        <div class="sign-up__body">
+          <div
+            class="popup-story__container popup-story__container-2 sign-up__container"
+          >
+            <div class="sign-up__close-btn close-popup"></div>
+            <div class="popup-story__content">
+              <div class="popup-story__title section-title">Радость дарить</div>
+              <div class="popup-story__text">
+                <p class="popup-story__text-item">
+                  Мы довольно часто сами дарим свои пряники знакомым. Это
+                  замечательный подарок в любое время года, на любое торжество
+                  или просто небольшой презент в знак внимания. И нередко слышим
+                  в ответ: "Спасибо!!! Какая красота!!! Я знаю, кому я его
+                  подарю... (племяннику, дочке отвезу маме ...)!" Людей так
+                  переполняет радость, что им срочно хочется ей поделиться..
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="popup-story-3"
+        class="sign-up__popup popup-story popup-story__popup-1"
+      >
+        <div class="sign-up__body">
+          <div
+            class="popup-story__container popup-story__container-3 sign-up__container"
+          >
+            <div class="sign-up__close-btn close-popup"></div>
+            <div class="popup-story__content">
+              <div class="popup-story__title section-title">
+                Радость с продолжением
+              </div>
+              <div class="popup-story__text">
+                <p class="popup-story__text-item">
+                  Однажды мы украсили ёлку пряниками в нашей Воскресной школе.
+                  После окончания Святок дети подходили и выбирали себе пряники
+                  с ёлки в подарок. А в декабре следующего года я получила
+                  неожиданное сообщение от мамы двух девочек. Это были
+                  фотографии ёлки, украшенной нашими пряниками, со словами:
+                  "Вчера собрали  дома ёлку, и игрушки Ваши повесили. Просто
+                  красота и загляденье.... спасибо Вам ..." Вот такая радость с
+                  продолжением!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="go-top">
+        <img src="../img/icons/arrow-top.png" alt="Наверх">
+      </div> -->
+    </div>
+  </body>
+</html>

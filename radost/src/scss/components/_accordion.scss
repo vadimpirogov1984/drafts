@@ -1,0 +1,244 @@
+.questions {
+    &__accordion {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 28px;
+        }
+
+        // Мобильные
+        @media (max-width: 768px) {
+            margin-bottom: 24px;
+        }
+
+        // Маленькие мобильные
+        @media (max-width: 576px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.accordion {
+    &__content {
+        overflow: hidden;
+        visibility: hidden;
+        transition-property: height, visibility;
+        transition-timing-function: ease;
+
+
+        .accordion--active & {
+        visibility: visible;
+        }
+    }
+    &__text {
+        font-size: 16px;
+    }
+
+  &__item {
+    position: relative;
+    margin-top: -1px;
+    margin-bottom: 0;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    transition: border-color var(--transition);
+
+    &:hover,
+    &:focus {
+      border-top: 1px solid var(--orange);
+      border-bottom: 1px solid var(--orange);
+      z-index: 2;
+    }
+
+    &.is-active {
+      padding-bottom: 40px;
+        // Планшеты
+        @media (max-width: 992px) {
+            padding-bottom: 32px;
+        }
+
+        // Мобильные
+        @media (max-width: 768px) {
+            padding-bottom: 24px;
+        }
+
+      .ac-trigger__button {
+        transform: rotate(45deg);
+        background-color: #cacaca;
+      }
+
+      .ac-trigger:focus .ac-trigger__button svg {
+        stroke: #fff;
+      }
+    }
+
+    &.js-enabled {
+      .ac-trigger:hover .ac-trigger__button svg {
+        stroke: #000;
+      }
+    }
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.ac {
+  .ac-trigger {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0;
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(32 / 24);
+    transition: color 0.3s linear, border 0.3s linear;
+    outline: none;
+
+    &:after {
+      display: none;
+    }
+
+    &:focus {
+      color: #000;
+      border: none;
+
+      .ac-trigger__button svg {
+        stroke: #fff;
+      }
+    }
+
+    &:hover {
+      .ac-trigger__title {
+        color: var(--orange);
+      }
+
+      .ac-trigger__button {
+        background-color: var(--orange);
+
+        svg {
+          stroke: #fff;
+        }
+      }
+    }
+
+    &:active {
+      color: var(--orange-dark);
+      border-top: 1px solid var(--orange-dark);
+      border-bottom: 1px solid var(--orange-dark);
+      z-index: 2;
+    }
+    @media (max-width: 992px) {
+      padding: 24px 0;
+    }
+    @media (max-width: 768px) {
+      padding: 20px 0;
+    }
+    @media (max-width: 576px) {
+        padding: 16px 0;
+        font-weight: 400;
+    }
+  }
+
+  .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease;
+
+    .ac.js-enabled & {
+      visibility: hidden;
+    }
+
+    .ac.is-active & {
+      visibility: visible;
+    }
+  }
+}
+
+.ac-trigger {
+    /*Заголовок panel*/
+  &__title {
+    font-size: 24px;
+    font-family: var(--font-family);
+    transition: color var(--transition);
+    @media (max-width: 992px) {
+        font-size: 22px;
+    }
+        @media (max-width: 768px) {
+        font-size: 20px;
+    }
+        @media (max-width: 576px) {
+        font-size: 18px;
+    }
+    .ac-trigger:focus &,
+    .ac-trigger:hover & {
+      color: var(--orange);
+    }
+
+  }
+  /*Кнопка с +*/
+  &__button {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #cacaca;
+    transition: transform 0.3s linear, background-color 0.3s linear;
+    
+    @media (max-width: 768px) {
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+    @media (max-width: 576px) {
+        flex: 0 0 30px;
+        width: 30px;
+        height: 30px;
+        align-self: center;
+    }
+
+    svg {
+      width: 31px;
+      height: 31px;
+      stroke: #000;
+      transform: translate(10px, 10px);
+      transition: stroke 0.3s linear;
+      @media (max-width: 768px) {
+            width: 22px;
+            height: 22px;
+            transform: translate(9px, 8px);
+        }
+              @media (max-width: 577px) {
+            width: 18.6px;
+            height: 18.6px;
+            transform: translate(6px, 0);
+        }
+    }
+
+    .ac-trigger:focus &,
+    .ac-trigger:hover & {
+      svg {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+// Дополнительные глобальные стили для аккордеона
+.ac {
+  .ac-trigger:focus {
+    color: var(--orange);
+  }
+}

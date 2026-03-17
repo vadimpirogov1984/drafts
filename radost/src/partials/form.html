@@ -1,0 +1,71 @@
+<section class="section-offset">
+  <h2 class="section-title">1. Форма обратной связи</h2>
+  <div class="form-container">
+    <form
+      action="mail.php"
+      method="POST"
+      id="form2"
+      class="column-form__content form"
+    >
+      <p class="artstore-form-text">
+        Оставьте, пожалуйста, заявку здесь, и мы перезвоним вам в ближайшее
+        время
+      </p>
+      <label class="column-form__label">
+        <span class="visually-hidden">Ваше имя*</span>
+        <input
+          type="text"
+          name="name"
+          placeholder="Ваше имя*"
+          class="column-form__input"
+          required
+        />
+      </label>
+      <label class="column-form__label">
+        <span class="visually-hidden">Номер телефона</span>
+        <input
+          type="tel"
+          name="tel"
+          placeholder="+7(999)999-99-99*"
+          class="column-form__input tel"
+          required
+        />
+      </label>
+      <label class="column-form__label">
+        <span class="visually-hidden">Комментарий</span>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Комментарий"
+          class="column-form__textarea"
+        ></textarea>
+      </label>
+      <div class="privacy-agreement">
+        <label class="privacy-checkbox">
+          <input
+            type="checkbox"
+            id="privacyAgreement"
+            required
+            class="privacy-input"
+          />
+          <span class="checkmark"></span>
+        </label>
+        <span class="privacy-text">
+          Я согласен с
+          <a
+            href="blocks/privacy-policy.html"
+            class="privacy-link"
+            target="_blank"
+            >политикой конфиденциальности</a
+          >
+        </span>
+      </div>
+      <input type="hidden" name="recaptchaResponse" id="recaptchaResponse" />
+      <p class="form__button">
+        <button type="submit" class="btn" aria-label="Отправить заявку">
+          Отправить
+        </button>
+      </p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+<section class="section-offset">
+  <h2 class="section-title">3. Sign-up__popup</h2>
+  <a href="#sign-up__popup" class="body-item-btn btn popup-link">Записаться</a>
+  <div id="sign-up__popup" class="sign-up__popup">
+    <div class="sign-up__body">
+      <div class="sign-up__container container__sign-up">
+        <button
+          class="sign-up__close-btn close-popup"
+          aria-label="Закрыть окно"
+        ></button>
+        <form
+          action="../resources/mail.php"
+          method="POST"
+          id="form2"
+          class="column-form__content form"
+        >
+          <p class="artstore-form-text">
+            Оставьте, пожалуйста, заявку здесь, и мы перезвоним вам в ближайшее
+            время
+          </p>
+          <label class="column-form__label">
+            <span class="visually-hidden">Ваше имя*</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ваше имя*"
+              class="column-form__input"
+              required=""
+            />
+          </label>
+          <label class="column-form__label">
+            <span class="visually-hidden">Номер телефона</span>
+            <input
+              type="tel"
+              name="tel"
+              placeholder="+7(999)999-99-99*"
+              class="column-form__input tel"
+              required=""
+            />
+          </label>
+          <label class="column-form__label">
+            <span class="visually-hidden">Комментарий</span>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Комментарий"
+              class="column-form__textarea"
+            ></textarea>
+          </label>
+          <input
+            type="hidden"
+            name="recaptchaResponse"
+            id="recaptchaResponse2"
+            value="HFb2tnfBJDZwwmPXxSQUFDQB5hE3dsHWk9EwcmDXc0CSw9Fx93a08XZQ1xcDFHLHQAOW1WCxgUSENbPgBtF39mRAcAXBt4QnwwMWYDaBtVSTZBZCRjZTpzCShkOBhgakVFSjJMOCYleTRobXtQZzJ1ODQeam50OgtmCTY_bGMxZwwhGSwDHB9iHx5hFGpue2o_Yg83CHM0Cjw4Fm5jfD4Hbw06N2hvOWMAKR1UCxgTahoSaRAcZn9mRFBHaU0jZVEwMGFPNDllQn1bY2w9Bj94HyoQOBgUZFweVTNoexAHGTNkfihAAy1bQm9aYBZjLQxtHiFOaQIzAVBhN3UDHGkUHgtjEXdsHWk_Fg4iH3NI"
+          />
+          <p class="form__button">
+            <button type="submit" class="btn" aria-label="Отправить заявку">
+              Отправить
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

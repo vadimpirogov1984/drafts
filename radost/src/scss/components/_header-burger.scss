@@ -1,0 +1,108 @@
+/**/
+.header {
+  padding-top: 68px;
+}
+.header__logo {
+  margin-right: 170px;
+}
+.header__list {
+  flex-direction: column;
+  font-size: 18px;
+  align-items: flex-start;
+  font-weight: 400;
+}
+.header__container {
+  align-items: flex-start;
+}
+.header__list-link {
+  color: #414144;
+  font-size: 18px;
+  line-height: 1.2;
+  position: relative;
+  transition: 0.3s color ease;
+  text-transform: uppercase;
+}
+.header__list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.header_contacts {
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* .header__list-item {
+  } */
+.header_contacts-link {
+  color: #c5cad9;
+  font-size: 18px;
+  position: relative;
+  transition: 0.3s color ease;
+}
+/* .header__list-link::after,
+.header_contacts-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #C5CAD9;
+    transition: width 0.3s ease-in-out;
+} */
+
+/* .header__list-link:hover::after,
+.header_contacts-link:hover::after {
+    width: 100%;
+} */
+.header__visible-links {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.header__visible-links-link {
+  color: #c5cad9;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.header__nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 23%;
+  height: 100vh;
+  padding: var(--offset);
+  overflow-y: auto;
+  background: linear-gradient(
+    to left,
+    #c5cad9 0%,
+    rgba(197, 202, 217, 0.8) 100%,
+    transparent 100%
+  );
+  z-index: 100;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header.menu--active .header__nav {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+.header.menu--active .burger::before,
+.header.menu--active .burger::after {
+  background-color: #414144;
+}

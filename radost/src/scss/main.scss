@@ -1,0 +1,17 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "vendor";
+
+// подключения компонентов страницы
+// @import "./components/header";
+// @import "./components/header-burger";
+// @import "./components/sign-up-popup";
+// @import "./components/thank-you";
+// @import "./components/accordion";
+// @import "./components/form";
+@import "./components/cookies";
+@import "./components/cookies";
+@import "./components/privacy";

@@ -1,0 +1,8 @@
+@include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@include font-face(
+  "InstrumentSans-Bold",
+  "../fonts/InstrumentSans-Bold",
+  700,
+  normal
+);
+/*Подключается каждое начертание можно с одним наименованием "Muller"*/
